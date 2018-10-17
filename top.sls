@@ -1,12 +1,12 @@
 base:
-  "node3":
-    - zabbix
+  "*":
+    - init.init
   'slave1':
     - zabbix
   "node2":
    # - match: list
    # - php
-    - nginx
+    - zabbix
    # - zabbix
   "spark1":
     - zabbix
