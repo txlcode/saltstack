@@ -1,8 +1,8 @@
 base:
   "*":
     - init.init
-  'slave1':
-    - zabbix
+  'node3':
+    - mysql 
   "node2":
    # - match: list
    # - php

@@ -17,4 +17,4 @@ zabbix_service:
     - name: zabbix_agentd
     - enable: True
     - watch:
-         - file: /usr/local/zabbix/etc/zabbix_agentd.conf
+         - file: zabbix_conf
