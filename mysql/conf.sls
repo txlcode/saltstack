@@ -6,8 +6,8 @@ mysql_cnf:
     - source: salt://mysql/conf/my.cnf
 
 salt://mysql/files/conf.sh:
-  cmd.script:
-    - unless: test -d /data/database/
+  cmd.script: 
+    #- unless: test -d /data/database/ 运行完第一次 请去掉这行注释
     - env:
       - BATCH: 'yes'
     - require:
