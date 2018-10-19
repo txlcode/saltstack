@@ -2,13 +2,13 @@ base:
   #"*":
   #  - init.init
   'node3':
-    - mysql
+  #  - mysql
     - nginx 
   "node2":
    # - match: list
-   # - nginx
-    - zabbix
-    - mysql
+    - nginx
+   # - zabbix
+   # - mysql
   "spark1":
     - zabbix
   "bigdata":
