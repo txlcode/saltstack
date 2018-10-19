@@ -7,6 +7,7 @@ mysql_cnf:
 
 salt://mysql/files/conf.sh:
   cmd.script:
+    - unless: test -d /data/database/
     - env:
       - BATCH: 'yes'
     - require:
@@ -15,6 +16,7 @@ salt://mysql/files/conf.sh:
 
 salt://mysql/files/mysqllns.sh:
   cmd.script:
+    - unless: test -f /usr/bin/mysql
     - env:
       - BATCH: 'yes'
     - require:
@@ -35,6 +37,5 @@ mysql_service:
   service.running:
     - name: mysqld
     - enable: True
-    - reload: True
     - watch:
       - file: mysql_cnf

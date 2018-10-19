@@ -93,6 +93,7 @@ case "$1" in
 		;;
 	status)
 		status $BINARY_NAME
+                exit 7
 		;;
 	restart)
 		stop

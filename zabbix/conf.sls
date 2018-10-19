@@ -17,4 +17,4 @@ zabbix_service:
     - name: zabbix_agentd
     - enable: True
     - watch:
-         - file: zabbix_conf
+      - file: zabbix_conf
