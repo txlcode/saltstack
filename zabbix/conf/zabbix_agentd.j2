@@ -140,10 +140,10 @@ ServerActive=114.55.93.131:10051
 # Default:
 # Hostname=
 
-Hostname=mysql_{{ (grains.ip4_interfaces.eth0)[0] }}
+Hostname=mysql_{{ (grains.ip4_interfaces.eth1)[0] }}
 
 ### Option: HostnameItem
-#	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
+#######	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
 #	Does not support UserParameters or aliases.
 #
 # Mandatory: no

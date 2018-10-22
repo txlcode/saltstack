@@ -81,6 +81,16 @@ stop() {
 	[ $RETVAL -eq 0 ] && rm -f /var/lock/subsys/$BINARY_NAME
 	RUNNING=0
 }
+status()
+{
+    if [ -e "$PIDFILE" ]
+        then
+            echo " zabbix_agentd is running!!!"
+        else
+            echo " zabbix_agentd is stopped"
+            exit 7
+    fi
+}
 
 
 # logic
@@ -92,8 +102,7 @@ case "$1" in
 		stop
 		;;
 	status)
-		status $BINARY_NAME
-                exit 7
+		status
 		;;
 	restart)
 		stop
