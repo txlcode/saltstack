@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 fdisk -l
-read -p "Plase input disk: " USER_LIST
+USER_LIST='/dev/vdb'
 echo "n
 p
 1
