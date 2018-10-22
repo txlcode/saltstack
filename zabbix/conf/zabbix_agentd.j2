@@ -129,7 +129,7 @@ Server=114.55.93.131
 # Default:
 # ServerActive=
 
-ServerActive=114.55.93.135:10051
+ServerActive=114.55.93.131:10051
 
 ### Option: Hostname
 #	Unique, case sensitive hostname.
@@ -140,7 +140,7 @@ ServerActive=114.55.93.135:10051
 # Default:
 # Hostname=
 
-Hostname=cdsb_{{ (grains.ip4_interfaces.eth0)[0] }}
+Hostname=mysql_{{ (grains.ip4_interfaces.eth0)[0] }}
 
 ### Option: HostnameItem
 #	Item used for generating Hostname if it is undefined. Ignored if Hostname is defined.
