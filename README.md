@@ -1,6 +1,5 @@
 # saltstack
-this is dev branch
-
+this is master
 mysql 安装时候需要注意的
 1 mysql/conf.sls
 
