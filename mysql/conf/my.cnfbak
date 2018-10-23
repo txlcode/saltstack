@@ -1,4 +1,8 @@
-
+[mysqld]
+datadir = /data/database/data
+pid-file=/data/database/mysql.pid
+port            = 3306
+socket = /tmp/mysqld.sock
 {% if grains['mem_total'] > 1024 and grains['mem_total'] < 2048 %}
 key_buffer_size = 32M
 table_open_cache = 128

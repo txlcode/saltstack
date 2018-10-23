@@ -1,5 +1,5 @@
 base:
   "xiaochengxu_db":
     #- init
-    #- mysql
-    - zabbix
+    - mysql
+    #- zabbix

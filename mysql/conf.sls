@@ -4,10 +4,11 @@ mysql_cnf:
     - user: root
     - mode: 755
     - source: salt://mysql/conf/my.cnf
+    - template: jinja
 
 salt://mysql/files/conf.sh:
   cmd.script: 
-    #- unless: test -d /data/database/ 运行完第一次 请去掉这行注释
+    - unless: test -d /data/database/data/performance_schema/
     - env:
       - BATCH: 'yes'
     - require:
