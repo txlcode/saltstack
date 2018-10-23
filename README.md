@@ -1,5 +1,5 @@
 # saltstack
-dev
+this is dev branch
 
 mysql 安装时候需要注意的
 1 mysql/conf.sls
