@@ -1,5 +1,6 @@
 # saltstack
-this is master
+this is iss53 branch
+
 mysql 安装时候需要注意的
 1 mysql/conf.sls
 
