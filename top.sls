@@ -2,4 +2,4 @@ base:
   "*":
     #- init
     - php
-    #- zabbix
+    #- nginx

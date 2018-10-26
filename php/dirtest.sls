@@ -1,7 +1,7 @@
 file_dir:
   file.recurse:
     - name: /data/projects
-    - source: salt://php/file
+    - source: salt://php/files/
     - user: root
     - file_mode: 644
     - dir_mode: 755
