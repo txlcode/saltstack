@@ -1,5 +1,7 @@
 base:
   "*":
-    #- init
+    - init
+    - nginx
     - php
-    #- nginx
+    - zabbix
+    - mysql

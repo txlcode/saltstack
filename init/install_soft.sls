@@ -1,4 +1,4 @@
-install_soft:
+install_basesoft:
   pkg.installed:
     - names:            
       - vim-enhanced
