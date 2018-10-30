@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 fdisk -l
-USER_LIST='/dev/xvdb'
+USER_LIST='/dev/vdb'
 echo "n
 p
 1
@@ -18,4 +18,4 @@ fi
 mount ${USER_LIST}1 /data
 
 #设置开机自启动
-echo -e "/dev/xvdb1\t\t\t/data\text4\tdefaults\t1 2" >> /etc/fstab
+echo -e "/dev/vdb1\t\t\t/data\text4\tdefaults\t1 2" >> /etc/fstab
