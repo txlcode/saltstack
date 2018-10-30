@@ -19,7 +19,7 @@ events.mechanism = epoll
 [www]
 user = fpm
 group = fpm
-listen={{ (grains.ip4_interfaces.eth0)[0] }}:9000
+listen={{ (grains.ip4_interfaces.eth1)[0] }}:9000
 listen.backlog = 1024
 ;listen.allowed_clients = 0.0.0.0
 pm = static
