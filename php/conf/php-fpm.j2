@@ -11,7 +11,7 @@ process.max = 2000
 process.priority = 0
 daemonize = yes
 events.mechanism = epoll
-
+#include=/usr/local/php7/etc/php-fpm.d/*.conf
 
 
 
@@ -19,7 +19,7 @@ events.mechanism = epoll
 [www]
 user = fpm
 group = fpm
-listen={{ (grains.ip4_interfaces.eth1)[0] }}:9000
+listen={{ (grains.ip4_interfaces.eth0)[0] }}:9000
 listen.backlog = 1024
 ;listen.allowed_clients = 0.0.0.0
 pm = static
