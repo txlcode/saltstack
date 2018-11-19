@@ -3,5 +3,5 @@ include:
   - .install_php7
   - .conf
   - .install_php7redis
-  - .install_swoole.sls
+  - .install_swoole
   - .php_running
