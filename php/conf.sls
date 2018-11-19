@@ -27,15 +27,4 @@ php-fpm:
       - /sbin/chkconfig --add php-fpm
       - /sbin/chkconfig php-fpm on
     - unless: /sbin/chkconfig --list php-fpm
-#启动php-fpm服务
-php_running:
-  service.running:
-    - name: php-fpm
-    - enable: True
-    - require:
-      - file: phpini
-      - file: phpfpmconf
-    - watch:
-      - file: phpini
-      - file: phpfpmconf
       

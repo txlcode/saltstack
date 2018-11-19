@@ -1,5 +1,7 @@
 include:
+  - .install_soft
   - .install_php7
-  - .install_phpredis
   - .conf
-  - .dirtest
+  - .install_php7redis
+  - .install_swoole.sls
+  - .php_running
