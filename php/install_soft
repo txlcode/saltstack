@@ -1,0 +1,30 @@
+install_soft:
+  pkg.installed:
+    - names:
+      - openssl-devel
+      - libmcrypt
+      - libmcrypt-devel 
+      - bzip2 
+      - bzip2-devel
+      - php-mssql
+      - zlib
+      - libxml
+      - libjpeg
+      - freetype
+      - libpng
+      - gd
+      - curl
+      - libiconv
+      - zlib-devel
+      - libxml2-devel
+      - libjpeg-devel
+      - freetype-devel
+      - libpng-devel
+      - gd-devel
+      - curl-devel
+      - libxslt-devel
+      - freetds
+      - freetds-devel
+      - autoconf
+      - zip
+      - unzip
