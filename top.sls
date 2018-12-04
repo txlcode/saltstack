@@ -2,6 +2,6 @@ base:
   "*":
    # - init
    # - nginx
-    - php
+    - redis_yum
    # - zabbix
    # - mysql
