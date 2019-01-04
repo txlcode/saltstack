@@ -3,7 +3,7 @@ mysql_cnf:
     - name: /etc/my.cnf
     - user: root
     - mode: 755
-    - source: salt://mysql/conf/my.cnf
+    - source: salt://mysql/conf/my56.cnf
     - template: jinja
 
 salt://mysql/files/conf.sh:
